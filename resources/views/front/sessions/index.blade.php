@@ -1,11 +1,11 @@
 @extends('front.layouts.master')
 
 @section('content')
-    <div class="row">
+    <div class="row justify-content-center"> <!-- Centering the row -->
 
         <div class="col-md-12" id="register">
 
-            <div class="card col-md-8">
+            <div class="card col-md-8 mx-auto"> <!-- Centering the card -->
                 <div class="card-body">
 
                     <h2 class="card-title">Login</h2>
