@@ -4,7 +4,7 @@
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
 
-    <title>JavasShop Admin</title>
+    <title>Umbrella Admin</title>
 
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport'/>
     <meta name="viewport" content="width=device-width"/>
@@ -29,7 +29,7 @@
     <div class="container-fluid">
         <div class="navbar-header">
             <a class="navbar-brand" href="#">
-                JavaShop Admin
+                Umbrella Admin
             </a>
         </div>
     </div>
@@ -66,13 +66,13 @@
 
                             <div class="form-group">
                                 <label for="email">Email:</label>
-                                <input type="email" name="email" id="email" placeholder="Email" value="jhon@example.com"
+                                <input type="email" name="email" id="email" placeholder="Email" value="user@example.com"
                                        class="form-control border-input">
                             </div>
 
                             <div class="form-group">
                                 <label for="password">Password:</label>
-                                <input type="password" name="password" id="password" placeholder="Password" value ="$2y$10$Gkoho102gT2niXU2EQhUNuMJ7LYC81WSS/TZzs0T6/VxoXxAiS7le"
+                                <input type="password" name="password" id="password" placeholder="Password" value ="12345678"
                                        class="form-control border-input">
                             </div>
 

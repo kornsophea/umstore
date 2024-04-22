@@ -1,7 +1,8 @@
 @extends('front.layouts.master')
 @section('content')
 <div class="px-16 py-16">
-    <h2 class="mt-5"><i class="fa fa-shopping-cart"></i> Shopping Cart</h2>
+   <h1 class="mt-5 font-weight-bold mb-4"><i class="fa fa-shopping-cart"></i> Shopping Cart</h1>
+
     <hr>
 
     @if ( Cart::instance('default')->count() > 0 )
@@ -97,9 +98,10 @@
                     <hr>
                 </div>
                 @else
-                    <h3>There is not item in your Cart</h3>
-                    <a href="/" class="btn btn-outline-dark">Continue Shopping</a>
-                    <hr>
+                   <h3 class="mb-4 mt-4">There is no item in your Cart</h3>
+<hr>
+                    <a href="/" class="mb-4 mt-4 btn btn-outline-dark">Continue Shopping</a>
+                    
                 @endif
 
 

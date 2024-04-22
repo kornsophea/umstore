@@ -12,13 +12,15 @@
             <div class="card">
                 <img class="card-img-top" src="{{ url('/uploads') . '/' . $product->image }}" alt="">
                 <div class="card-body">
-                    <h5 class="card-title">{{ $product->name }}</h5>
+                    <h5 class="card-title"><strong>{{ $product->name }}</strong></h5>
+
                     <p class="card-text">
                        {{ $product->description }}
                     </p>
                 </div>
-                <div class="card-footer">
-                    <strong>${{ $product->price }}</strong> &nbsp;
+                <div class="card-footer ">
+                   <strong style="color: #00796b;">${{ $product->price }}</strong>
+
                     <form action="{{ route('/cart') }}" method="post">
                         @csrf
                         <input type="hidden" name="id" value="{{ $product->id }}">

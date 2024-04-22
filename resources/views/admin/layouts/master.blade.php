@@ -20,6 +20,8 @@
     <link href="{{ url('assets/css/themify-icons.css') }}" rel="stylesheet">
       
     <link href="{{ url('assets/css/style.css') }}" rel="stylesheet">
+
+     <link rel="icon" type="image/jpg" href="upload/02.jpg">
       
 
     {{-- {{ Html::style('https://fonts.googleapis.com/css?family=Muli:400,300') }} --}}
@@ -93,7 +95,7 @@
                 <div class="copyright pull-right">
                     &copy;
                     <script>document.write(new Date().getFullYear())</script>
-                    , made with <i class="fa fa-heart heart"></i> by <a href="">Javed</a>
+                    , made with <i class="fa fa-heart heart"></i> by <a href="">Moon Lii</a>
                 </div>
             </div>
         </footer>

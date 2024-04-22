@@ -20,7 +20,9 @@ class UserProfileController extends Controller
     
 
     public function show($id) {
-        $order = Order::find($id);
+        $order = Order::with('user', 'items.product')->findOrFail($id);
+
+        // Return the view with the order data
         return view('front.profile.details', compact('order'));
     }
 }

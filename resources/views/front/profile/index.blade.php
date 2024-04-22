@@ -2,10 +2,12 @@
 
 @section('content')
 
-    <h2>Profile</h2>
+    <div class=" px-16 py-16">
+    {{-- <h2>Profile</h2>
     <hr>
 
     <h3>User Details</h3>
+    <br> --}}
 
     <table class="table table-bordered">
         <thead>
@@ -32,7 +34,8 @@
     </table>
 
 
-    <h4 class="title">Orders</h4>
+   <h4 class="title"><b>Orders</b></h4>
+
     <hr>
     <div class="content table-responsive table-full-width">
         <table class="table table-bordered table-striped">
@@ -79,6 +82,7 @@
             @endforeach
             </tbody>
         </table>
+    </div>
     </div>
 
 @endsection

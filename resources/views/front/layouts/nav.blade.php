@@ -21,13 +21,13 @@
                             </li>
 
                             <li>
-                                <a class="transition hover:text-gray-500/75" href="/products">
+                                <a class="transition font-bold hover:text-gray-500/75" href="/products">
                                     Product
                                 </a>
                             </li>
 
                             <li>
-                                <a class="transition hover:text-gray-500/75" href="/about">
+                                <a class="transition font-bold hover:text-gray-500/75" href="/about">
                                     About
                                 </a>
                             </li>
@@ -38,7 +38,7 @@
                 <li>
                     @auth
                         <a class="text-black" href="/cart">
-                            <i class="fas fa-shopping-cart"></i> Cart
+                            <i class="fa fa-shopping-cart"></i> Cart
                             @if (Cart::instance('default')->count() > 0)
                                 <strong>({{ Cart::instance('default')->count() }})</strong>
                             @endif
@@ -47,7 +47,8 @@
                 </li>
                 <li class="group relative">
     <button class="text-black flex items-center group-hover:text-gray-300 focus:outline-none transition duration-150 ease-in-out" id="user-menu-toggle">
-        <i class="fas fa-user"></i>
+        <i class="fa fa-user px-1"></i>
+
         <span class="hidden lg:inline">{{ auth()->check() ? auth()->user()->name : 'Account' }}</span>
     </button>
     <div class="hidden absolute right-0 mt-2 w-48 bg-white border border-gray-200 rounded-md shadow-lg z-10" id="user-menu">
@@ -55,9 +56,9 @@
             <a class="block px-4 py-2 text-gray-800 hover:bg-gray-100" href="{{ url('user/login') }}">Sign In</a>
             <a class="block px-4 py-2 text-gray-800 hover:bg-gray-100" href="{{ url('user/register') }}">Sign Up</a>
         @else
-            <a class="block px-4 py-2 text-gray-800 hover:bg-gray-100" href="{{ url('user/profile') }}"><i class="fas fa-user"></i> Profile</a>
+            <a class="block px-4 py-2 text-gray-800 hover:bg-gray-100" href="{{ url('user/profile') }}"> <i class="fa fa-user px-1"></i> Profile</a>
             <hr>
-            <a class="block px-4 py-2 text-gray-800 hover:bg-gray-100" href="{{ url('user/logout') }}"><i class="fas fa-lock"></i> Logout</a>
+            <a class="block px-4 py-2 text-gray-800 hover:bg-gray-100" href="{{ url('user/logout') }}"> <i class="fa fa-sign-out"></i> Logout</a>
         @endguest
     </div>
 </li>

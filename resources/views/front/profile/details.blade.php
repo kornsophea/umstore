@@ -1,7 +1,10 @@
 @extends('front.layouts.master')
 
 @section('content')
-    <h2>User Order Details Page</h2>
+  <div class="px-16 py-16">
+    <h2><strong>User Order Details Page</strong></h2>
+
+    <br>
     <hr>
 
     <div class="row">
@@ -38,9 +41,11 @@
                 </table>
             </div>
         </div>
+        
         <div class="col-md-6">
 
-            <h4 class="title">User Details</h4>
+            <h4 class="title"><strong>User Details</strong></h4>
+            <br>
             <hr>
             <div class="content table-responsive table-full-width">
                 <table class="table table-bordered table-striped">
@@ -66,67 +71,37 @@
                 </table>
             </div>
         </div>
-        <div class="col-md-6">
-
-            <h4 class="title">Product Details</h4>
-            <hr>
-            <div class="content table-responsive table-full-width">
-                <table class="table table-bordered table-striped">
-                    <tr>
-                        <th>Order ID</th>
-                        <th>Product Name</th>
-                        <th>Price</th>
-                        <th>Quantity</th>
-                        <th>Image</th>
-                    </tr>
-                    <tr>
-                        <td>{{ $order->id }}</td>
-                        <td>
-                            @foreach ($order->products as $product)
-                                <table class="table">
-                                    <tr>
-                                        <td>{{ $product->name }}</td>
-                                    </tr>
-                                </table>
+          <div class="col-md-12">
+           <div class="header py-2">
+                    <h4 class="title">Product Details</h4>
+                </div>
+            <div class="card">
+               
+                <div class="content table-responsive table-full-width">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Product Name</th>
+                                <th>Price</th>
+                                <th>Quantity</th>
+                                <th>Image</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach ($order->items as $item)
+                                <tr>
+                                    <td>{{ $item->product->name }}</td>
+                                    <td>{{ $item->price }}</td>
+                                    <td>{{ $item->quantity }}</td>
+                                    <td><img src="{{ asset('uploads/' . $item->product->image) }}" alt="{{ $item->product->name }}" style="width: 50px; height: auto;"></td>
+                                </tr>
                             @endforeach
-                        </td>
-
-                        <td>
-                            @foreach ($order->orderItems as $item)
-                                <table class="table">
-                                    <tr>
-                                        <td>{{ $item->price }}</td>
-                                    </tr>
-                                </table>
-                            @endforeach
-                        </td>
-
-                        <td>
-                            @foreach ($order->orderItems as $item)
-                                <table class="table">
-                                    <tr>
-                                        <td>{{ $item->quantity }}</td>
-                                    </tr>
-                                </table>
-                            @endforeach
-                        </td>
-
-                        <td>
-                            @foreach ($order->products as $product)
-                                <table class="table">
-                                    <tr>
-                                        <td><img src="{{ url('uploads') . '/' . $product->image }}" alt=""
-                                                 style="width: 2em"></td>
-                                    </tr>
-                                </table>
-                            @endforeach
-                        </td>
-                    </tr>
-
-                </table>
-
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
     </div>
+  </div>
 
 @endsection
