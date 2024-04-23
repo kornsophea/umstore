@@ -46,22 +46,22 @@
     <main>
         <section class="logos">
             <div class="logos-slide">
-                <img src="/storage/image/adidas.svg" alt="brand">
-                <img src="/storage/image/jordan.svg" alt="brand">
-                <img src="/storage/image/newbalance.svg" alt="brand">
-                <img src="/storage/image/nike.svg" alt="brand">
-                <img src="/storage/image/puma.svg" alt="brand">
-                <img src="/storage/image/converse.svg" alt="brand">
-                <img src="/storage/image/fila.svg" alt="brand">
-                <img src="/storage/image/reebok.svg" alt="brand">
-                <img src="/storage/image/adidas.svg" alt="brand">
-                <img src="/storage/image/jordan.svg" alt="brand">
-                <img src="/storage/image/newbalance.svg" alt="brand">
-                <img src="/storage/image/nike.svg" alt="brand">
-                <img src="/storage/image/puma.svg" alt="brand">
-                <img src="/storage/image/converse.svg" alt="brand">
-                <img src="/storage/image/fila.svg" alt="brand">
-                <img src="/storage/image/reebok.svg" alt="brand">
+                <img src="/assets/img/adidas.svg" alt="brand">
+                <img src="/assets/img/jordan.svg" alt="brand">
+                <img src="/assets/img/newbalance.svg" alt="brand">
+                <img src="/assets/img/nike.svg" alt="brand">
+                <img src="/assets/img/puma.svg" alt="brand">
+                <img src="/assets/img/converse.svg" alt="brand">
+                <img src="/assets/img/fila.svg" alt="brand">
+                <img src="/assets/img/reebok.svg" alt="brand">
+                <img src="/assets/img/adidas.svg" alt="brand">
+                <img src="/assets/img/jordan.svg" alt="brand">
+                <img src="/assets/img/newbalance.svg" alt="brand">
+                <img src="/assets/img/nike.svg" alt="brand">
+                <img src="/assets/img/puma.svg" alt="brand">
+                <img src="/assets/img/converse.svg" alt="brand">
+                <img src="/assets/img/fila.svg" alt="brand">
+                <img src="/assets/img/reebok.svg" alt="brand">
             </div>
         </section>
         <section class="max-w-screen-xl px-4 py-8 mx-auto sm:px-6 sm:py-12 lg:px-8" data-aos="fade-up">
